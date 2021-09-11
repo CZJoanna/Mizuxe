@@ -1,5 +1,10 @@
 body {
-  padding-top: 8rem; }
+  padding-top: 5rem; }
+
+.c-showcase {
+  background-image: linear-gradient(to right, rgba(46, 132, 150, 0.8), rgba(46, 132, 150, 0.8)), url(../assets/img/mountains.jpg);
+  background-size: cover;
+  background-position: center top; }
 
 .c-logo-area {
   display: flex;
@@ -17,7 +22,7 @@ body {
     text-decoration: none; }
 
 .b-navbar {
-  box-shadow: 2px 2px 5px rgba(46, 132, 150, 0.8);
+  box-shadow: 2px 2px 5px #2e8496;
   opacity: 0.9;
   background-color: #fff; }
   .b-navbar .nav-item {
