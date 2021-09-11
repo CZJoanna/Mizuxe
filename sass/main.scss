@@ -10,9 +10,15 @@ body {
   padding-top: 8rem;
 }
 
-//components
+// components
+/////////////////////
 
-.logo-area {
+// 客製化樣式 method1
+// 不依賴 bootstrap，為完整獨立的模組
+// 前提：該元素內不得有任何 bootstrap 提供的 class
+// c-name， name = 以貼近插件功能為主
+
+.c-logo-area {
   display: flex;
   align-items: center;
   &__box {
@@ -33,12 +39,23 @@ body {
   }
 }
 
-.c-navbar {
+// 客製化樣式 method2
+// 以改動 bootstrap 內建樣式為目的
+// 前提：元素的安排為 bootstrap 設定的架構，並有套用其提供的 class
+// b-name －》name = 欲改動的b插件 class
+// 欲改動內部子元素，以觀察 bootstrap 撰寫方式，用同權重，以「前」蓋「後」的方式修改
+// ！需注意：自定義樣式的檔案需放在 bootstrap 後
+
+.b-navbar {
   box-shadow: 2px 2px 5px $primary-overlay;
   opacity: 0.9;
   background-color: #fff;
 
   .nav-item {
     padding: 0 0.5rem;
+
+    // .nav-link {
+    //   color: pink;
+    // }
   }
 }

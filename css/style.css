@@ -1,24 +1,24 @@
 body {
   padding-top: 8rem; }
 
-.logo-area {
+.c-logo-area {
   display: flex;
   align-items: center; }
-  .logo-area__box {
+  .c-logo-area__box {
     width: 4rem;
     height: 4rem; }
-  .logo-area__img {
+  .c-logo-area__img {
     display: inline-block;
     width: 100%; }
-  .logo-area__logo-name {
+  .c-logo-area__logo-name {
     color: black;
     text-transform: uppercase;
     margin-left: 0.5rem;
     text-decoration: none; }
 
-.c-navbar {
+.b-navbar {
   box-shadow: 2px 2px 5px rgba(46, 132, 150, 0.8);
   opacity: 0.9;
   background-color: #fff; }
-  .c-navbar .nav-item {
+  .b-navbar .nav-item {
     padding: 0 0.5rem; }
