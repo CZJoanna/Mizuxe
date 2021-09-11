@@ -1,0 +1,44 @@
+//variables
+
+$primary-overlay: rgba(46, 132, 150, 0.8);
+
+//base
+
+//typography
+
+body {
+  padding-top: 8rem;
+}
+
+//components
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  &__box {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 100%;
+  }
+
+  &__logo-name {
+    color: black;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    text-decoration: none;
+  }
+}
+
+.c-navbar {
+  box-shadow: 2px 2px 5px $primary-overlay;
+  opacity: 0.9;
+  background-color: #fff;
+
+  .nav-item {
+    padding: 0 0.5rem;
+  }
+}
