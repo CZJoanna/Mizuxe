@@ -1,0 +1,15 @@
+.c-showcase {
+  background-image: linear-gradient(
+      to right,
+      rgba($primary-overlay, 0.8),
+      rgba($primary-overlay, 0.8)
+    ),
+    url(../assets/img/mountains.jpg);
+
+  background-size: cover;
+  background-position: center top;
+
+  @include respond(phone) {
+    text-align: center;
+  }
+}

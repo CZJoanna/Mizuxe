@@ -1,35 +1,21 @@
-//variables
-
-$primary-overlay: rgb(46, 132, 150);
+//abstracts
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
 
 //base
+@import "./base/animation";
+@import "./base/base";
+@import "./base/typography";
 
-//typography
-
-body {
-  padding-top: 5rem;
-}
-
-//page
-
-.c-showcase {
-  background-image: linear-gradient(
-      to right,
-      rgba($primary-overlay, 0.8),
-      rgba($primary-overlay, 0.8)
-    ),
-    url(../assets/img/mountains.jpg);
-
-  background-size: cover;
-  background-position: center top;
-}
+//pages
+@import "./pages/home";
 
 // components
 /////////////////////
 
 // 客製化樣式 method1
 // 不依賴 bootstrap，為完整獨立的模組
-// 前提：該元素內不得有任何 bootstrap 提供的 class
+// 前提：該元素內，可以同時使用 bootstrap 提供的 utility (mb-2,py-5,d-block 等等)，但不得有其他任何 bootstrap 提供的 class，會有權重問題導致客製樣式無法顯示的可能性
 // c-name， name = 以貼近插件功能為主
 
 .c-logo-area {
