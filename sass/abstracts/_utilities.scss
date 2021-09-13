@@ -1,0 +1,11 @@
+.u-mb-lg-s {
+  @include respond(lg) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.u-mb-md-s {
+  @include respond(md) {
+    margin-bottom: 1rem;
+  }
+}
