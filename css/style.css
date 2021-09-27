@@ -29,6 +29,16 @@ body {
   margin: 0 auto;
   border-bottom: 1px #ddd solid; }
 
+.c-author {
+  transition: all 0.2s; }
+  .c-author:hover {
+    background-color: #2e8496;
+    color: white; }
+    .c-author:hover .fab {
+      color: white; }
+  .c-author__img {
+    margin-top: -50px; }
+
 .c-logo-area {
   display: flex;
   align-items: center; }
